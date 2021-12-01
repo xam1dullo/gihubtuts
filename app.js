@@ -72,6 +72,7 @@ const filters = (load, props) => {
     //     return false
     //   }*/
 
+
     //Payout
 
     if (payout && (!load.hasOwnProperty('payout') || load.payout.value < payout || typeof load.payout.value !== "number")) {
