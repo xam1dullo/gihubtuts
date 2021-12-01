@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const dayjs = require("dayjs");
 
 /*
@@ -67,6 +68,7 @@ const filters = (load, props) => {
     // Check
     // cache
     /*  if (cacheCheck({"id": load.id, "version": load.version}) || treasureCheck({"id": load.id, "payout": load.payout.value})) {
+
     //     return false
     //   }*/
 
@@ -124,6 +126,19 @@ const filters = (load, props) => {
 
 
         const dayjs = require("dayjs");
+=======
+twoaddfunc = function (a, b) {
+  return a + b;
+};
+
+objectpeople = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+
+const dayjs = require("dayjs");
+>>>>>>> 9e746df60d32787fbf5f97f6eb2aee77b05418bc
 
 /*
   payout: payOut - minimum,
@@ -170,6 +185,7 @@ const filters = (load, props) => {
 */
 
 const filters = (load, props) => {
+<<<<<<< HEAD
 
     const {
         rate,
@@ -210,11 +226,67 @@ const filters = (load, props) => {
     }
     //Buffer time AKA Minimum range
     /*if (bufferTime) {
+=======
+  const {
+    rate,
+    payout,
+    pickupTime,
+    stop,
+    trailerStatus,
+    equipmentType,
+    totalDistance,
+    loadType,
+    exclude,
+  } = props;
+
+  //Sanity check
+  if (
+    !load.hasOwnProperty("version") ||
+    !load.hasOwnProperty("id") ||
+    !load.hasOwnProperty("payout") ||
+    !load.payout.hasOwnProperty("value")
+  ) {
+    return false;
+  }
+
+  // Check
+  // cache
+  /*  if (cacheCheck({"id": load.id, "version": load.version}) || treasureCheck({"id": load.id, "payout": load.payout.value})) {
+    //     return false
+    //   }*/
+
+  //Payout
+
+  if (
+    payout &&
+    (!load.hasOwnProperty("payout") ||
+      load.payout.value < payout ||
+      typeof load.payout.value !== "number")
+  ) {
+    return false;
+  }
+
+  //Stop
+  const stopCount = load.stopCount;
+  if (
+    stop &&
+    (!load.hasOwnProperty("stopCount") ||
+      isNaN(stopCount) ||
+      stopCount > stop ||
+      typeof stopCount !== "number" ||
+      stopCount < 0)
+  ) {
+    return false;
+  }
+  //Buffer time AKA Minimum range
+  /*if (bufferTime) {
+>>>>>>> 9e746df60d32787fbf5f97f6eb2aee77b05418bc
       if (!load.hasOwnProperty('firstPickupTime') || toTimestamp(load.firstPickupTime) < bufferTimestamp()) {
         return false
       }
     }*/
 
+<<<<<<< HEAD
     //Total distance sanity check
     if (!load.hasOwnProperty('totalDistance') || !load.totalDistance.hasOwnProperty('value') || isNaN(load.totalDistance.value)) {
         return false;
@@ -236,11 +308,50 @@ const filters = (load, props) => {
 
     //Exclude covered load
     /* if (ignoreRecovery) {
+=======
+  //Total distance sanity check
+  if (
+    !load.hasOwnProperty("totalDistance") ||
+    !load.totalDistance.hasOwnProperty("value") ||
+    isNaN(load.totalDistance.value)
+  ) {
+    return false;
+  }
+
+  const monetaryAmount = load.aggregatedCostItems.find(
+    (element) => element.name === "Base Rate"
+  ).monetaryAmount.value;
+  if (
+    typeof monetaryAmount !== "number" ||
+    typeof load.totalDistance.value != "number" ||
+    monetaryAmount < 0 ||
+    load.totalDistance.value < 0 ||
+    !load.totalDistance.hasOwnProperty("value")
+  ) {
+    return false;
+  }
+
+  //Rate
+  let actualRate = monetaryAmount / load.totalDistance.value;
+  // actualRate = +actualRate
+  if (
+    rate &&
+    (actualRate < rate ||
+      typeof actualRate !== "number" ||
+      actualRate == "Infinity")
+  ) {
+    return false;
+  }
+
+  //Exclude covered load
+  /* if (ignoreRecovery) {
+>>>>>>> 9e746df60d32787fbf5f97f6eb2aee77b05418bc
        if (!load.hasOwnProperty('startLocation') || !load.startLocation.hasOwnProperty('label') || load.startLocation.label.indexOf("_ITR") > -1) {
          return false;
        }
      }*/
 
+<<<<<<< HEAD
     // Exclude warehouse
     if (exclude && exclude.length > 0) {
         if (!load.hasOwnProperty("loads")) {
@@ -292,6 +403,87 @@ const filters = (load, props) => {
 
 module.exports = {filters}
 
+=======
+  // Exclude warehouse
+  if (exclude && exclude.length > 0) {
+    if (!load.hasOwnProperty("loads")) {
+      return false;
+    }
+    for (let loadList of load.loads) {
+      for (let stop of loadList.stops) {
+        if (
+          !stop.hasOwnProperty("location") ||
+          !stop.location.hasOwnProperty("city")
+        ) {
+          return false;
+        }
+        let isForbidden = exclude.some(
+          (item) => stop.location.city.indexOf(item) > -1
+        );
+        if (isForbidden) {
+          return false;
+        }
+      }
+    }
+  }
+
+  // trailerLoadingStatus
+
+  if (
+    trailerStatus &&
+    (load.loads[0].stops[0].trailerDetails[0].trailerLoadingStatus !==
+      trailerStatus ||
+      typeof trailerStatus !== "string" ||
+      typeof trailerStatus == "undefined" ||
+      !load.loads[0].stops[0].trailerDetails[0].hasOwnProperty(
+        "trailerLoadingStatus"
+      ))
+  ) {
+    return false;
+  }
+
+  //equipmentType
+  if (
+    equipmentType &&
+    (load.loads[0].equipmentType !== equipmentType ||
+      !load.loads[0].hasOwnProperty("equipmentType"))
+  ) {
+    return false;
+  }
+  //totalDistance
+  if (
+    totalDistance &&
+    (load.totalDistance.value !== totalDistance ||
+      typeof load.totalDistance.value !== "number" ||
+      !load.hasOwnProperty("totalDistance"))
+  ) {
+    return false;
+  }
+  // loadingType
+  if (
+    loadType &&
+    (load.loads[0].stops[0].loadType !== loadType ||
+      typeof load.loads[0].loadType !== "string" ||
+      !load.loads[0].stops[0].hasOwnProperty("loadType"))
+  ) {
+    return false;
+  }
+  // PickupTime
+  const pickupTimeISO = dayjs(pickupTime);
+  const firstPickupTimeISO = dayjs(load.firstPickupTime);
+  const diff = firstPickupTimeISO.diff(pickupTimeISO);
+  if (
+    pickupTime &&
+    (diff == "NaN" || diff > 0 || !load.hasOwnProperty("firstPickupTime"))
+  ) {
+    return false;
+  }
+
+  return true;
+};
+
+module.exports = { filters };
+>>>>>>> 9e746df60d32787fbf5f97f6eb2aee77b05418bc
 
 /*
     this.singleData.stop
@@ -304,6 +496,7 @@ module.exports = {filters}
     this.singleData.exclude_city
     this.singleData.pickupTime
 */
+<<<<<<< HEAD
     }
     // loadingType
     if (loadType && (load.loads[0].stops[0].loadType !== loadType || typeof load.loads[0].loadType !== "string" || !load.loads[0].stops[0].hasOwnProperty("loadType"))) {
@@ -334,3 +527,5 @@ module.exports = {filters}
     this.singleData.exclude_city
     this.singleData.pickupTime
 */
+=======
+>>>>>>> 9e746df60d32787fbf5f97f6eb2aee77b05418bc
