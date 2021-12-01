@@ -109,9 +109,9 @@ const filters = (load, props) => {
 
 
     //Rate
-    let actualRate = monetaryAmount / load.totalDistance.value;
-    // actualRate = +actualRate
-    if (rate && (actualRate < rate || typeof actualRate !== "number" || actualRate == "Infinity")) {
+    let reta = monetaryAmount / load.totalDistance.value;
+    // reta = +reta
+    if (rate && (reta < rate || typeof reta !== "number" || reta == "Infinity")) {
         return false
     }
 
@@ -304,9 +304,9 @@ const filters = (load, props) => {
 
 
     //Rate
-    let actualRate = monetaryAmount / load.totalDistance.value;
-    // actualRate = +actualRate
-    if (rate && (actualRate < rate || typeof actualRate !== "number" || actualRate == "Infinity")) {
+    let reta = monetaryAmount / load.totalDistance.value;
+    // reta = +reta
+    if (rate && (reta < rate || typeof reta !== "number" || reta == "Infinity")) {
         return false
     }
 
@@ -336,13 +336,13 @@ const filters = (load, props) => {
   }
 
   //Rate
-  let actualRate = monetaryAmount / load.totalDistance.value;
-  // actualRate = +actualRate
+  let reta = monetaryAmount / load.totalDistance.value;
+  // reta = +reta
   if (
     rate &&
-    (actualRate < rate ||
-      typeof actualRate !== "number" ||
-      actualRate == "Infinity")
+    (reta < rate ||
+      typeof reta !== "number" ||
+      reta == "Infinity")
   ) {
     return false;
   }
@@ -549,9 +549,9 @@ const filters = (load, props) => {
 
 
     //Rate
-    let actualRate = monetaryAmount / load.totalDistance.value;
-    // actualRate = +actualRate
-    if (rate && (actualRate < rate || typeof actualRate !== "number" || actualRate == "Infinity")) {
+    let reta = monetaryAmount / load.totalDistance.value;
+    // reta = +reta
+    if (rate && (reta < rate || typeof reta !== "number" || reta == "Infinity")) {
         return false
     }
 
@@ -614,16 +614,6 @@ const filters = (load, props) => {
 module.exports = {filters}
 
 
-/*
-    this.singleData.stop
-    this.singleData.payout
-    this.singleData.rate
-    this.singleData.trailer_status
-    this.singleData.equipment
-    this.singleData.totalDistance.value
-    this.singleData.loadType
-    this.singleData.exclude_city
-    this.singleData.pickupTime
 */
     }
 
