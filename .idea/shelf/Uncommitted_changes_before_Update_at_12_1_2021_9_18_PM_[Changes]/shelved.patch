@@ -1,0 +1,480 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <link rel=\"stylesheet\" href=\"style.css\" />\r\n    <title>Document</title>\r\n  </head>\r\n  <body>\r\n    <ul class=\"dropdown\">\r\n      <li><a href=\"/\">Dropdown @11 </a></li>\r\n      <li><a href=\"/\">Dropdown #22</a></li>\r\n      <li><a href=\"/\">Dropdown $23</a></li>\r\n      <li><a href=\"/\">Dropdown %34</a></li>\r\n      <li><a href=\"/\">Dropdown $45</a></li>\r\n    </ul>\r\n\r\n    <nav class=\"navbar\">\r\n      <!-- LOGO -->\r\n      <div class=\"logo\">MUO</div>\r\n      <!-- NAVIGATION MENU -->\r\n      <ul class=\"nav-links\">\r\n        <!-- USING CHECKBOX HACK -->\r\n        <input type=\"checkbox\" id=\"checkbox_toggle\" />\r\n        <label for=\"checkbox_toggle\" class=\"hamburger\">&#9776;</label>\r\n        <!-- NAVIGATION MENUS -->\r\n        <div class=\"menu\">\r\n          <li><a href=\"/\">Home</a></li>\r\n          <li><a href=\"/\">About</a></li>\r\n          <li class=\"services\">\r\n            <a href=\"/\">Services</a>\r\n            <!-- DROPDOWN MENU -->\r\n            <a href=\"liin\"></a>\r\n            <ul class=\"dropdown\">\r\n              <li><a href=\"/\">Dropdown @11 </a></li>\r\n              <li><a href=\"/\">Dropdown #22</a></li>\r\n              <li><a href=\"/\">Dropdown $23</a></li>\r\n              <li><a href=\"/\">Dropdown %34</a></li>\r\n              <li><a href=\"/\">Dropdown $45</a></li>\r\n            </ul>\r\n          </li>\r\n          <li><a href=\"/\">Pricing</a></li>\r\n          <li><a href=\"/\">Contact</a></li>\r\n        </div>\r\n      </ul>\r\n    </nav>\r\n    <footer>\r\n      <ul>\r\n        <li>\r\n          <a href=\"@\">Lorem, ipsum.</a>\r\n        </li>\r\n      </ul>\r\n    </footer>\r\n\r\n    <nav>\r\n      <div class=\"container\">\r\n        <span>\r\n          <ul>\r\n            saaaaaa\r\n          </ul>\r\n        </span>\r\n      </div>\r\n    </nav>\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 8211e6483124f75e044ca23b0fd76b6bca722f1c)
++++ b/index.html	(date 1638375257111)
+@@ -16,6 +16,13 @@
+       <li><a href="/">Dropdown $45</a></li>
+     </ul>
+ 
++  <ul class="dropdown">
++              <li><a href="/">Dropdown @11 </a></li>
++              <li><a href="/">Dropdown #22</a></li>
++              <li><a href="/">Dropdown $23</a></li>
++              <li><a href="/">Dropdown %34</a></li>
++              <li><a href="/">Dropdown $45</a></li>
++            </ul>
+     <nav class="navbar">
+       <!-- LOGO -->
+       <div class="logo">MUO</div>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cc87a350-2c8c-463c-9a53-7e91d066dab5\" name=\"Changes\" comment=\"udapte alink\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21gpLrwhYdbTKAMpCnQFrsOWfoM\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"advanced.settings\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cc87a350-2c8c-463c-9a53-7e91d066dab5\" name=\"Changes\" comment=\"\" />\r\n      <created>1638372531953</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638372531953</updated>\r\n      <workItem from=\"1638372533850\" duration=\"1063000\" />\r\n      <workItem from=\"1638373652665\" duration=\"1339000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"create index.html\">\r\n      <created>1638372596511</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372596511</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"create app.js on write\">\r\n      <created>1638372699200</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372699200</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"write index.html\">\r\n      <created>1638372880936</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372880936</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"write index.html footer added\">\r\n      <created>1638373206259</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638373206259</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"delete and write app\">\r\n      <created>1638373565194</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638373565194</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"udaptes index.html and others\">\r\n      <created>1638374860962</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638374860962</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"create index.html\" />\r\n    <MESSAGE value=\"create app.js on write\" />\r\n    <MESSAGE value=\"write index.html\" />\r\n    <MESSAGE value=\"write index.html footer added\" />\r\n    <MESSAGE value=\"delete and write app\" />\r\n    <MESSAGE value=\"delete and write appa\" />\r\n    <MESSAGE value=\"des\" />\r\n    <MESSAGE value=\"aaaaa\" />\r\n    <MESSAGE value=\"udaptes index.html and others\" />\r\n    <MESSAGE value=\"udapte alink\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"udapte alink\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8211e6483124f75e044ca23b0fd76b6bca722f1c)
++++ b/.idea/workspace.xml	(date 1638375498056)
+@@ -4,8 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="udapte alink">
++    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="create filterjs">
++      <change afterPath="$PROJECT_DIR$/filte.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -65,7 +67,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1638372531953</updated>
+       <workItem from="1638372533850" duration="1063000" />
+-      <workItem from="1638373652665" duration="1339000" />
++      <workItem from="1638373652665" duration="1798000" />
+     </task>
+     <task id="LOCAL-00001" summary="create index.html">
+       <created>1638372596511</created>
+@@ -109,7 +111,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1638374860962</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="aploede">
++      <created>1638375107034</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1638375107034</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -138,6 +147,10 @@
+     <MESSAGE value="aaaaa" />
+     <MESSAGE value="udaptes index.html and others" />
+     <MESSAGE value="udapte alink" />
+-    <option name="LAST_COMMIT_MESSAGE" value="udapte alink" />
++    <MESSAGE value="asdsfdgfdgfhgfdsdsf" />
++    <MESSAGE value="aploede" />
++    <MESSAGE value="uplodeds implements" />
++    <MESSAGE value="create filterjs" />
++    <option name="LAST_COMMIT_MESSAGE" value="create filterjs" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: filte.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/filte.js b/filte.js
+new file mode 100644
+--- /dev/null	(date 1638375493820)
++++ b/filte.js	(date 1638375493820)
+@@ -0,0 +1,365 @@
++const dayjs = require("dayjs");
++const filters = (load, props) => {
++    const {
++        transitOperatorType,
++        workOpportunityType,
++        startLocation,
++        endLocation,
++        exclude,
++        WhiteList,
++        MinDistance,
++        MaxDistance,
++        MaxDuration,
++        MinDuration,
++        include,
++        payout,
++        firstPickupTime,
++        lastDeliveryTime,
++        stopCount,
++        trailerStatus,
++        equipmentType,
++        totalDistance,
++        rate,
++        loadType,
++        filterStatus,
++    } = props;
++
++    console.table({exclude})
++    if (!load.hasOwnProperty('version') || !load.hasOwnProperty('id') || !load.hasOwnProperty('payout') || !load.payout.hasOwnProperty('value')) {
++        console.log({mag: "error 1 qatorda"})
++        return false;
++    }
++
++
++    // Check
++    /*  if (cacheCheck({"id": load.id, "version": load.version}) || treasureCheck({"id": load.id, "payout": load.payout.value})) {
++    //     return false
++    //   }*/
++
++    //Payout
++    if (payout && (isNaN(load.payout.value) || !load.hasOwnProperty('payout') || load.payout.value < payout.value || typeof load.payout.value !== "number")) {
++        console.log({
++            loadPayout: load.payout.value,
++            payout: payout.value,
++            notequail: load.payout.value !== payout,
++            hasPayout: load.payout.hasOwnProperty('value'),
++            typeofPayout: typeof load.payout.value,
++            big: load.payout.value > payout.value,
++            small: load.payout.value < payout.value,
++            isNaN: isNaN(load.payout.value),
++        })
++
++        return false;
++    }
++
++    console.log({
++        loadType,
++        load: load.loads[0].loadType,
++    })
++    if (loadType && load.loads[0].loadType !== loadType || typeof load.loads[0].loadType !== "string") {
++        return false;
++    }
++    // stopCount
++    if (stopCount && (load.stopCount == "NaN" || !load.hasOwnProperty('stopCount') || typeof load.stopCount !== "number" || typeof stopCount !== "number" || load.stopCount < 0 || load.stopCount > stopCount || load.stopCount !== stopCount)) {
++        console.log({
++            stopCount,
++            loadStopCount: load.stopCount
++        })
++        return false
++    }
++//transitOperatorType
++    if (transitOperatorType && (!load.hasOwnProperty('transitOperatorType') || load.transitOperatorType !== transitOperatorType || typeof load.transitOperatorType !== "string")) {
++        console.log({
++            transitOperatorType,
++            loadTransitOperatorType: load.transitOperatorType
++        })
++        return false
++    }
++//Buffer time AKA Minimum range
++    /*if (bufferTime) {
++      if (!load.hasOwnProperty('firstPickupTime') || toTimestamp(load.firstPickupTime) < bufferTimestamp()) {
++        return false
++      }
++    }*/
++
++
++//monetaryAmount
++    const monetaryAmount = load.aggregatedCostItems.find(element => element.name === "Base Rate").monetaryAmount.value;
++    if (typeof monetaryAmount !== "number" || typeof (load.totalDistance.value) != "number" || monetaryAmount < 0 || load.totalDistance.value < 0 || !load.totalDistance.hasOwnProperty("value")) {
++        console.log({
++            monetaryAmount,
++        })
++        return false
++    }
++
++
++//Rate
++    let loadReate = monetaryAmount / load.totalDistance.value;
++
++
++    if (rate && (loadReate < rate.value || isNaN(loadReate) || loadReate == "Infinity") || typeof loadReate !== "number") {
++        console.log({
++            rate: rate.value,
++            loadReate: loadReate,
++        })
++        return false
++    }
++
++//Exclude covered load
++    /* if (ignoreRecovery) {
++       if (!load.hasOwnProperty('startLocation') || !load.startLocation.hasOwnProperty('label') || load.startLocation.label.indexOf("_ITR") > -1) {
++         return false;
++       }
++     }*/
++
++
++// startLocation
++    if (startLocation) {
++        if (!load.hasOwnProperty("startLocation")) {
++            console.log("Error One 140 line")
++            return false;
++        }
++        const {
++            city, //array
++            state,//array
++        } = startLocation;
++
++
++        let sumCity = 0;
++        let sumState = 0;
++        load.loads[0].stops.filter((item) => {
++            const {city: loadCity} = item.location;
++            const {state: loadState} = item.location;
++            if (city.includes(loadCity)) {
++                sumCity++;
++            }
++            if (state.includes(loadState)) {
++                sumState++;
++            }
++        })
++        if (sumState == 0 || sumCity == 0) {
++
++            console.table({
++                state,
++                city,
++                loadCity: load.startLocation.city,
++                loadState: load.startLocation.state,
++                sumState,
++                sumCity,
++            })
++            return false
++        }
++
++
++    }
++
++// endLocation
++    if (endLocation) {
++        if (!load.hasOwnProperty("endLocation")) {
++            console.log("Error One 140 line")
++            return false;
++        }
++
++        const {
++            city, //array
++            state,//array
++        } = endLocation;
++
++        let sumCity = 0;
++        let sumState = 0;
++        load.loads[0].stops.filter((item) => {
++            const {city: loadCity} = item.location;
++            const {state: loadState} = item.location;
++            if (city.includes(loadCity)) {
++                sumCity++;
++            }
++            if (state.includes(loadState)) {
++                sumState++;
++            }
++        })
++        if (sumState == 0 || sumCity == 0) {
++            console.count({state})
++            console.table({
++                sumState,
++                sumCity,
++            })
++            return false
++        }
++    }
++
++    //exclude
++    if (exclude) {
++        const {
++            city, //array
++            state,//array
++        } = exclude;
++
++        let sumCity = 0;
++        let sumState = 0;
++        load.loads[0].stops.filter((item) => {
++            const {city: loadCity} = item.location;
++            const {state: loadState} = item.location;
++            if (!city.includes(loadCity)) {
++                sumCity++;
++            }
++            if (!state.includes(loadState)) {
++                sumState++;
++            }
++        })
++        if (sumState == 0 || sumCity == 0) {
++            console.count({state})
++            console.table({
++                sumState,
++                sumCity,
++            })
++            return false
++        }
++    }
++    //whitelist
++    // if (whitelist) {
++    //     const {
++    //         city, //array
++    //         state,//array
++    //     } = whitelist;
++    //
++    //     let sumCity = 0;
++    //     let sumState = 0;
++    //     load.loads[0].stops.filter((item) => {
++    //         const {city: loadCity} = item.location;
++    //         const {state: loadState} = item.location;
++    //         if (city.includes(loadCity)) {
++    //             sumCity++;
++    //         }
++    //         if (state.includes(loadState)) {
++    //             sumState++;
++    //         }
++    //     })
++    //     if (sumState == 0 || sumCity == 0) {
++    //         console.count({state})
++    //         console.table({
++    //             sumState,
++    //             sumCity,
++    //         })
++    //         return false
++    //     }
++    // }
++    //
++    // trailerLoadingStatus
++    if (trailerStatus && (load.loads[0].stops[0].trailerDetails[0].trailerLoadingStatus !== trailerStatus)) {
++        console.log({
++            trailerStatus,
++            loadTrailerStatus: load.loads[0].stops[0].trailerDetails[0].trailerLoadingStatus
++        })
++        return false
++    }
++
++// workOpportunityType
++
++
++    if (workOpportunityType && (load.workOpportunityType != workOpportunityType || typeof workOpportunityType !== "string")) {
++        console.log({
++            workOpportunityType,
++            loadWorkOpportunityType: load.workOpportunityType,
++            equal: load.workOpportunityType !== workOpportunityType,
++            equl2: load.workOpportunityType == workOpportunityType,
++            type: typeof workOpportunityType !== "string",
++        })
++        return false;
++        console.log("ok")
++    }
++
++//equipmentType
++    if (equipmentType && (load.loads[0].equipmentType !== equipmentType || !load.loads[0].hasOwnProperty("equipmentType"))) {
++        console.log({
++            equipmentType,
++            equipmentType2: load.loads[0].equipmentType
++        })
++        return false;
++    }
++//totalDistance
++    if (totalDistance && (load.totalDistance.value !== totalDistance || typeof load.totalDistance.value !== "number" || !load.hasOwnProperty("totalDistance"))) {
++        console.log({
++            totalDistance,
++            totalDistance2: load.totalDistance.value
++        })
++        return false;
++    }
++
++// PickupTime
++    const firstPickupTimeISO = dayjs(firstPickupTime)
++    const firstPickupTimeISOData = dayjs(load.firstPickupTime)
++    const diffPickUp = firstPickupTimeISO.diff(firstPickupTimeISOData, "hour")
++
++    if (firstPickupTime && (diffPickUp == "NaN" || diffPickUp > 0)) {
++        console.log({
++            firstPickupTime,
++            loadFirstPickupTime: load.firstPickupTime,
++        })
++        return false
++    }
++// lastDeliveryTime
++    const deliveryTimeISO = dayjs(lastDeliveryTime);
++    const lastDeliveryTimeISO = dayjs(load.lastDeliveryTime)
++
++    const diffDelivery = deliveryTimeISO.diff(lastDeliveryTimeISO, "hour")
++    console.table({
++        diffDelivery,
++        lastDeliveryTime,
++        deliveryTimeISO,
++        lastDeliveryTimeISO,
++        loadLastDeliveryTime: load.lastDeliveryTime,
++        NaN: diffDelivery === "NaN",
++        log: "NaN"
++
++    })
++    if (lastDeliveryTime && (diffDelivery == "NaN" || diffDelivery < 0 || !load.hasOwnProperty("lastDeliveryTime"))) {
++        console.log({
++            diffDelivery
++        })
++        return false
++    }
++
++
++// MinDuration
++    if (MinDuration && (load.totalDuration < MinDuration)) {
++        console.log({
++            MinDuration,
++            loadMinDuration: load.totalDuration
++        })
++        return false
++    }
++// maxDuration
++    if (MaxDuration && (load.totalDuration < MaxDuration)) {
++        console.log({
++            MaxDuration,
++            loadMaxDuration: load.totalDuration
++        })
++        return false
++    }
++
++// MinDistance
++    if (MinDistance && (load.totalDistance.value > MinDistance)) {
++        console.log({
++            MinDistance,
++            loadMinDistance: load.totalDistance.value
++        })
++        return false
++
++    }
++
++// MaxDistance
++    if (MaxDistance && (load.totalDistance > MaxDistance)) {
++        console.log({
++            MaxDistance,
++            loadMaxDistance: load.totalDistance
++        })
++        return false
++    }
++
++
++    console.log({msg: "congratulation"})
++    return true
++}
++
++
++module.exports = {filters}
+\ No newline at end of file
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>twoaddfunc = function(a, b) {\r\n  return a + b;\r\n};\r\n\r\nobjectpeople = {\r\n  name: \"John\",\r\n  age: 30,\r\n  city: \"New York\"\r\n};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.js b/app.js
+--- a/app.js	(revision 8211e6483124f75e044ca23b0fd76b6bca722f1c)
++++ b/app.js	(date 1638375257151)
+@@ -6,4 +6,7 @@
+   name: "John",
+   age: 30,
+   city: "New York"
+-};
+\ No newline at end of file
++};
++
++
++

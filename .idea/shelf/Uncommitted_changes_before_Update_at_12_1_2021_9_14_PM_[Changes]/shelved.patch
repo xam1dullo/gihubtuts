@@ -1,0 +1,101 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <link rel=\"stylesheet\" href=\"style.css\" />\r\n    <title>Document</title>\r\n  </head>\r\n  <body>\r\n    <nav class=\"navbar\">\r\n      <!-- LOGO -->\r\n      <div class=\"logo\">MUO</div>\r\n      <!-- NAVIGATION MENU -->\r\n      <ul class=\"nav-links\">\r\n        <!-- USING CHECKBOX HACK -->\r\n        <input type=\"checkbox\" id=\"checkbox_toggle\" />\r\n        <label for=\"checkbox_toggle\" class=\"hamburger\">&#9776;</label>\r\n        <!-- NAVIGATION MENUS -->\r\n        <div class=\"menu\">\r\n          <li><a href=\"/\">Home</a></li>\r\n          <li><a href=\"/\">About</a></li>\r\n          <li class=\"services\">\r\n            <a href=\"/\">Services</a>\r\n            <!-- DROPDOWN MENU -->\r\n            <a href=\"liin\"></a>\r\n            <ul class=\"dropdown\">\r\n              <li><a href=\"/\">Dropdown @11 </a></li>\r\n              <li><a href=\"/\">Dropdown #22</a></li>\r\n              <li><a href=\"/\">Dropdown $23</a></li>\r\n              <li><a href=\"/\">Dropdown %34</a></li>\r\n              <li><a href=\"/\">Dropdown $45</a></li>\r\n            </ul>\r\n          </li>\r\n          <li><a href=\"/\">Pricing</a></li>\r\n          <li><a href=\"/\">Contact</a></li>\r\n        </div>\r\n      </ul>\r\n    </nav>\r\n    <footer>\r\n      <ul>\r\n        <li>\r\n          <a href=\"@\">Lorem, ipsum.</a>\r\n        </li>\r\n      </ul>\r\n    </footer>\r\n\r\n    <nav>\r\n      <div class=\"container\">\r\n        <span>\r\n          <ul>\r\n            saaaaaa\r\n          </ul>\r\n        </span>\r\n      </div>\r\n    </nav>\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 56b2f8d58b6452ac65557701a3aadfc1bb1d6299)
++++ b/index.html	(date 1638375193298)
+@@ -8,6 +8,13 @@
+     <title>Document</title>
+   </head>
+   <body>
++  <ul class="dropdown">
++              <li><a href="/">Dropdown @11 </a></li>
++              <li><a href="/">Dropdown #22</a></li>
++              <li><a href="/">Dropdown $23</a></li>
++              <li><a href="/">Dropdown %34</a></li>
++              <li><a href="/">Dropdown $45</a></li>
++            </ul>
+     <nav class="navbar">
+       <!-- LOGO -->
+       <div class="logo">MUO</div>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cc87a350-2c8c-463c-9a53-7e91d066dab5\" name=\"Changes\" comment=\"udapte alink\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21gpLrwhYdbTKAMpCnQFrsOWfoM\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"advanced.settings\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cc87a350-2c8c-463c-9a53-7e91d066dab5\" name=\"Changes\" comment=\"\" />\r\n      <created>1638372531953</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638372531953</updated>\r\n      <workItem from=\"1638372533850\" duration=\"1063000\" />\r\n      <workItem from=\"1638373652665\" duration=\"1339000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"create index.html\">\r\n      <created>1638372596511</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372596511</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"create app.js on write\">\r\n      <created>1638372699200</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372699200</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"write index.html\">\r\n      <created>1638372880936</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638372880936</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"write index.html footer added\">\r\n      <created>1638373206259</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638373206259</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"delete and write app\">\r\n      <created>1638373565194</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638373565194</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"udaptes index.html and others\">\r\n      <created>1638374860962</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638374860962</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"create index.html\" />\r\n    <MESSAGE value=\"create app.js on write\" />\r\n    <MESSAGE value=\"write index.html\" />\r\n    <MESSAGE value=\"write index.html footer added\" />\r\n    <MESSAGE value=\"delete and write app\" />\r\n    <MESSAGE value=\"delete and write appa\" />\r\n    <MESSAGE value=\"des\" />\r\n    <MESSAGE value=\"aaaaa\" />\r\n    <MESSAGE value=\"udaptes index.html and others\" />\r\n    <MESSAGE value=\"udapte alink\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"udapte alink\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 56b2f8d58b6452ac65557701a3aadfc1bb1d6299)
++++ b/.idea/workspace.xml	(date 1638375195090)
+@@ -4,8 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="udapte alink">
++    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="aploede">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -65,7 +66,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1638372531953</updated>
+       <workItem from="1638372533850" duration="1063000" />
+-      <workItem from="1638373652665" duration="1339000" />
++      <workItem from="1638373652665" duration="1498000" />
+     </task>
+     <task id="LOCAL-00001" summary="create index.html">
+       <created>1638372596511</created>
+@@ -109,7 +110,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1638374860962</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="aploede">
++      <created>1638375107034</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1638375107034</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -138,6 +146,8 @@
+     <MESSAGE value="aaaaa" />
+     <MESSAGE value="udaptes index.html and others" />
+     <MESSAGE value="udapte alink" />
+-    <option name="LAST_COMMIT_MESSAGE" value="udapte alink" />
++    <MESSAGE value="asdsfdgfdgfhgfdsdsf" />
++    <MESSAGE value="aploede" />
++    <option name="LAST_COMMIT_MESSAGE" value="aploede" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>twoaddfunc = function(a, b) {\r\n  return a + b;\r\n};\r\n\r\nobjectpeople = {\r\n  name: \"John\",\r\n  age: 30,\r\n  city: \"New York\"\r\n};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.js b/app.js
+--- a/app.js	(revision 56b2f8d58b6452ac65557701a3aadfc1bb1d6299)
++++ b/app.js	(date 1638375185167)
+@@ -6,4 +6,7 @@
+   name: "John",
+   age: 30,
+   city: "New York"
+-};
+\ No newline at end of file
++};
++
++
++

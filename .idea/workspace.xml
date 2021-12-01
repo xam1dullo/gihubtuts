@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="udapte alink">
+    <list default="true" id="cc87a350-2c8c-463c-9a53-7e91d066dab5" name="Changes" comment="write app.js">
+      <change afterPath="$PROJECT_DIR$/filte.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638372531953</updated>
       <workItem from="1638372533850" duration="1063000" />
-      <workItem from="1638373652665" duration="1339000" />
+      <workItem from="1638373652665" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary="create index.html">
       <created>1638372596511</created>
@@ -109,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638374860962</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="aploede">
+      <created>1638375107034</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638375107034</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +147,12 @@
     <MESSAGE value="aaaaa" />
     <MESSAGE value="udaptes index.html and others" />
     <MESSAGE value="udapte alink" />
-    <option name="LAST_COMMIT_MESSAGE" value="udapte alink" />
+    <MESSAGE value="asdsfdgfdgfhgfdsdsf" />
+    <MESSAGE value="aploede" />
+    <MESSAGE value="uplodeds implements" />
+    <MESSAGE value="create filterjs" />
+    <MESSAGE value="update filter.js" />
+    <MESSAGE value="write app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="write app.js" />
   </component>
 </project>
