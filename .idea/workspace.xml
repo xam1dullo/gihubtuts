@@ -24,7 +24,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638372531953</updated>
       <workItem from="1638372533850" duration="1063000" />
-      <workItem from="1638373652665" duration="2200000" />
+      <workItem from="1638373652665" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="create index.html">
       <created>1638372596511</created>
