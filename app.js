@@ -1,13 +1,3 @@
-twoaddfunc = function (a, b) {
-  return a + b;
-};
-
-objectpeople = {
-  name: "John",
-  age: 30,
-  city: "New York",
-};
-
 const dayjs = require("dayjs");
 
 /*
